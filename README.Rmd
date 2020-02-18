@@ -2,7 +2,7 @@
 title: "Post-Conflict Party Nationalization"
 author: "Jose Antonio Fortou"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
