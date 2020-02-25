@@ -5,10 +5,11 @@ title: Post-Conflict Party Nationalization
 output:
   github_document:
     toc: true
+lang: "en"
 ---
 
 
-```{r setup, include=FALSE, cache = TRUE}
+```{r setup, include = FALSE}
 # rmarkdown/knitr options
 knitr::opts_chunk$set(
 	echo = FALSE,
@@ -19,7 +20,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r}
+```{r, include = FALSE}
 # libraries
 library(tidyverse)
 
