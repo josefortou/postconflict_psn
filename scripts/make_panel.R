@@ -1,5 +1,5 @@
 # load libraries
-#install.packages("countrycode")
+
 library(countrycode)
 library(tidyverse)
 
@@ -14,8 +14,10 @@ panel <- codelist_panel %>%
     p4c, p4n, vdem,
     imf, wb,
     un, unpd, region
-  )
+  ) %>%
+  filter(year > 1945) %>%
+  as_tibble()
 
 # save dataframe
-write_rds(panel, "data/panel.rds")
-#rm(list = ls())
+write_rds(panel, "output/data/panel.rds")
+rm(list = ls())
