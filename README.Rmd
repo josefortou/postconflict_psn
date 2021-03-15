@@ -1,7 +1,7 @@
 ---
 author: "Jose Antonio Fortou"
 date: '`r format(Sys.Date())`'
-title: Post-Conflict Party Nationalization
+title: Post-Conflict Party Systems
 output:
   github_document:
     # toc: true

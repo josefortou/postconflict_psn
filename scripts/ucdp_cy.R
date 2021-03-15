@@ -1,5 +1,5 @@
-# libraries
-library(tidyverse)
+# load libraries
+# library(tidyverse)
 
 # load data
 load("data/ucdp/ucdp-prio-acd-201.RData") 
@@ -12,7 +12,7 @@ acd <- ucdp_prio_acd_201 %>%
 
 rm(ucdp_prio_acd_201)
 
-# agreggate into country-year format
+# aggregate into country-year format
 acd_cy <- acd %>%
   group_by(side_a_id, year) %>%
   summarize(
@@ -29,9 +29,12 @@ acd_cy <- acd %>%
   ungroup() %>%
   arrange(gwno_a, year)
 
-# recode some factors
+rm(acd)
+
+# recode some variables
 acd_cy <- acd_cy %>%
   mutate(
+    gwno_a = as.integer(gwno_a),
     all_incompatibility = fct_relevel(case_when(
       all_incompatibility %in% c("1", "1, 1", "1, 1, 1", "1, 1, 1, 1") ~ "Territory",
       all_incompatibility == 2 ~ "Government",
@@ -44,5 +47,5 @@ acd_cy <- acd_cy %>%
   )
 
 # save
-write_rds(acd_cy, "output/data/acd_cy.rds")
-rm(list = ls())
+# write_rds(acd_cy, "output/data/acd_cy.rds")
+# rm(list = ls())
