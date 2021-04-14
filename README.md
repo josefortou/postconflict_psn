@@ -9,10 +9,10 @@ What do postconflict party systems look like, and why are some more
 nationalized (i.e. exhibit competition that is both programmatic and
 geographically dispersed) than others?
 
-This repository is associated with my dissertation project at Ohio
+<!--This repository is associated with my dissertation project at Ohio
 State. I thank Sarah Brooks, Jan Pierskalla, Cris Gelpi, Austin Knuppe,
 Jessiva Maves Braithwaite, John Ishiyama, Irfan Nooruddin, Tom Flores,
-Mike Weintraub, among many others.
+Mike Weintraub, among many others.-->
 
 <!-- ## The Data -->
 <!-- This is a time-series cross-sectional panel; each observation is a country-election-year, since the key unit of analysis is the election, characteristics of the country and year it was held in, and the resulting party system.  -->
